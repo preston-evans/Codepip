@@ -2,6 +2,70 @@
 	padding: 0;
 	border: 0;
 	margin: 0;
+	font-family: sans-serif;
+}
+:focus {
+	outline: none;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+nav > div:not(:last-child) {
+	margin-right: 10px;
+}
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	font-size: 3rem;
+	color: hsl(182, 25%, 65%);
+	cursor: default;
+}
+a {
+	text-decoration: none;
+}
+header {
+	height: 156px;
+	background-color: hsl(182, 25%, 35%);
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+}
+header a {
+	color: hsla(0, 0%, 100%, 0.76);
+	font-size: 1.25rem;
+	transition: .15s ease-in;
+}
+header a:hover {
+	color: white;
+}
+header div a:not(:last-child) {
+	margin-right: 10px;
+}
+nav a {
+	text-decoration: none;
+	background-color: rgb(247, 112, 120);
+	color: white;
+	padding: 10px 20px;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	transition: .15s ease-in;
+}
+nav a:hover,
+nav a:focus {
+	background-color: hsl(356, 89%, 50%);
+}
+nav a:first-of-type {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+nav a:last-of-type {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
 }
 .container {
 	display: flex;
